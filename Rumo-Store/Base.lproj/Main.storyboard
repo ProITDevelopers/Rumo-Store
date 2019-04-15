@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DAA-c8-5wt">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Data Source-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Rumo_Store" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9eP-70-sgf" customClass="iCarousel">
+                                <rect key="frame" x="0.0" y="73" width="320" height="143"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="143" id="XTt-gq-fAy"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="3o0-Me-Cpb"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="tZC-aQ-fly"/>
+                                </connections>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Df-BJ-0cq">
+                                <rect key="frame" x="0.0" y="224" width="320" height="143"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="143" id="fnj-MW-Cji"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="wmu-jm-qLC" kind="embed" id="nEu-tY-Z3N"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ali-Mo-vfh">
+                                <rect key="frame" x="0.0" y="375" width="320" height="143"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="143" id="lfW-J8-tZh"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="59S-Iu-v7a" kind="embed" id="1QO-0x-jGi"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9eP-70-sgf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4iY-L5-rD4"/>
+                            <constraint firstItem="5Df-BJ-0cq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JHq-ue-A61"/>
+                            <constraint firstItem="5Df-BJ-0cq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="MVA-S4-iqU"/>
+                            <constraint firstItem="9eP-70-sgf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qdn-yG-gjf"/>
+                            <constraint firstItem="5Df-BJ-0cq" firstAttribute="top" secondItem="9eP-70-sgf" secondAttribute="bottom" constant="8" id="QyQ-XZ-ZN6"/>
+                            <constraint firstItem="ali-Mo-vfh" firstAttribute="top" secondItem="5Df-BJ-0cq" secondAttribute="bottom" constant="8" id="SsF-qC-6Yy"/>
+                            <constraint firstItem="9eP-70-sgf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="9" id="fGh-i1-ydT"/>
+                            <constraint firstItem="ali-Mo-vfh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lUQ-Ye-h79"/>
+                            <constraint firstItem="ali-Mo-vfh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mXO-2V-h2p"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OjM-9G-lWK">
+                        <barButtonItem key="backBarButtonItem" title=" " id="nhU-ZY-iZ5"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="icarousel" destination="9eP-70-sgf" id="mdi-iI-rSs"/>
+                        <segue destination="Sho-Kk-uCM" kind="show" identifier="imagens" id="SdJ-gV-2jq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="950.625" y="118.30985915492958"/>
+        </scene>
+        <!--Imagens-->
+        <scene sceneID="0f7-vB-BDv">
+            <objects>
+                <viewController storyboardIdentifier="imagens" id="Sho-Kk-uCM" customClass="imagens" customModule="Rumo_Store" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aFl-Q0-gTl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Puj-ZB-M74">
+                                <rect key="frame" x="63" y="74" width="194" height="222"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="222" id="hRl-hE-nfo"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dnV-f4-Dp6" firstAttribute="trailing" secondItem="Puj-ZB-M74" secondAttribute="trailing" constant="63" id="0Cj-UK-PWx"/>
+                            <constraint firstItem="Puj-ZB-M74" firstAttribute="leading" secondItem="dnV-f4-Dp6" secondAttribute="leading" constant="63" id="gP6-qf-prE"/>
+                            <constraint firstItem="Puj-ZB-M74" firstAttribute="top" secondItem="dnV-f4-Dp6" secondAttribute="top" constant="10" id="mwn-Fl-suD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dnV-f4-Dp6"/>
+                    </view>
+                    <connections>
+                        <outlet property="imagns" destination="Puj-ZB-M74" id="TX2-RV-nsd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TAv-eU-QBn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1771.875" y="118.30985915492958"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3zQ-uJ-6x0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DAA-c8-5wt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="z9y-vs-eQA">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="GkA-pi-wSY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bP4-qc-Xmg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26" y="118"/>
+        </scene>
+        <!--Data Source-->
+        <scene sceneID="5xq-K3-rn7">
+            <objects>
+                <viewController id="wmu-jm-qLC" customClass="Vanguarda" customModule="Rumo_Store" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pnL-RJ-lnX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="143"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wlo-AR-c04" customClass="iCarousel">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="143"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="wmu-jm-qLC" id="hLv-Tk-evf"/>
+                                    <outlet property="delegate" destination="wmu-jm-qLC" id="W8I-FF-1Ul"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Wlo-AR-c04" secondAttribute="bottom" id="2ZU-Pq-875"/>
+                            <constraint firstItem="Wlo-AR-c04" firstAttribute="leading" secondItem="pnL-RJ-lnX" secondAttribute="leading" id="Pkf-Wp-Gzg"/>
+                            <constraint firstItem="Wlo-AR-c04" firstAttribute="top" secondItem="pnL-RJ-lnX" secondAttribute="top" id="Ud8-Yk-KcA"/>
+                            <constraint firstAttribute="trailing" secondItem="Wlo-AR-c04" secondAttribute="trailing" id="vV1-4b-TQH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="icarousel" destination="Wlo-AR-c04" id="VqE-k5-jxE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dzM-Kk-b3C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440.625" y="719.8943661971831"/>
+        </scene>
+        <!--Data Source-->
+        <scene sceneID="2Bk-rX-wB1">
+            <objects>
+                <viewController id="59S-Iu-v7a" customClass="Rumo" customModule="Rumo_Store" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wTm-Eh-4Uq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="143"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kPk-fG-Z7i" customClass="iCarousel">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="143"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="59S-Iu-v7a" id="dKe-Ef-jq8"/>
+                                    <outlet property="delegate" destination="59S-Iu-v7a" id="x0L-tE-iGd"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kPk-fG-Z7i" firstAttribute="top" secondItem="FvF-Qb-Cck" secondAttribute="top" id="7so-nT-HnL"/>
+                            <constraint firstItem="kPk-fG-Z7i" firstAttribute="leading" secondItem="FvF-Qb-Cck" secondAttribute="leading" id="8xg-CK-ceE"/>
+                            <constraint firstItem="kPk-fG-Z7i" firstAttribute="trailing" secondItem="FvF-Qb-Cck" secondAttribute="trailing" id="PZl-gu-Nu8"/>
+                            <constraint firstItem="kPk-fG-Z7i" firstAttribute="bottom" secondItem="FvF-Qb-Cck" secondAttribute="bottom" id="twX-2d-YYF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FvF-Qb-Cck"/>
+                    </view>
+                    <connections>
+                        <outlet property="icarousel" destination="kPk-fG-Z7i" id="fWR-VR-Eza"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nc8-An-bWY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1410" y="719.8943661971831"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		801F342E2264B136009AE5B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801F342D2264B136009AE5B9 /* AppDelegate.swift */; };
+		801F34302264B136009AE5B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801F342F2264B136009AE5B9 /* ViewController.swift */; };
+		801F34332264B136009AE5B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 801F34312264B136009AE5B9 /* Main.storyboard */; };
+		801F34352264B137009AE5B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 801F34342264B137009AE5B9 /* Assets.xcassets */; };
+		801F34382264B137009AE5B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 801F34362264B137009AE5B9 /* LaunchScreen.storyboard */; };
+		801F34422264B5BE009AE5B9 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 801F34412264B5BE009AE5B9 /* iCarousel.m */; };
+		801F34442264C5ED009AE5B9 /* imagens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801F34432264C5ED009AE5B9 /* imagens.swift */; };
+		801F34482264D1A1009AE5B9 /* Vanguarda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801F34472264D1A1009AE5B9 /* Vanguarda.swift */; };
+		801F344A2264D2A6009AE5B9 /* Rumo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801F34492264D2A6009AE5B9 /* Rumo.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		801F342A2264B136009AE5B9 /* Rumo-Store.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rumo-Store.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		801F342D2264B136009AE5B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		801F342F2264B136009AE5B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		801F34322264B136009AE5B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		801F34342264B137009AE5B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		801F34372264B137009AE5B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		801F34392264B137009AE5B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		801F343F2264B5BD009AE5B9 /* Rumo-Store-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Rumo-Store-Bridging-Header.h"; sourceTree = "<group>"; };
+		801F34402264B5BE009AE5B9 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iCarousel.h; path = "../../../Downloads/iCarousel-master/iCarousel/iCarousel.h"; sourceTree = "<group>"; };
+		801F34412264B5BE009AE5B9 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iCarousel.m; path = "../../../Downloads/iCarousel-master/iCarousel/iCarousel.m"; sourceTree = "<group>"; };
+		801F34432264C5ED009AE5B9 /* imagens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagens.swift; sourceTree = "<group>"; };
+		801F34472264D1A1009AE5B9 /* Vanguarda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vanguarda.swift; sourceTree = "<group>"; };
+		801F34492264D2A6009AE5B9 /* Rumo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rumo.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		801F34272264B136009AE5B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		801F34212264B136009AE5B9 = {
+			isa = PBXGroup;
+			children = (
+				801F342C2264B136009AE5B9 /* Rumo-Store */,
+				801F342B2264B136009AE5B9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		801F342B2264B136009AE5B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				801F342A2264B136009AE5B9 /* Rumo-Store.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		801F342C2264B136009AE5B9 /* Rumo-Store */ = {
+			isa = PBXGroup;
+			children = (
+				801F34462264D119009AE5B9 /* Controller */,
+				801F34452264D110009AE5B9 /* View */,
+				801F34402264B5BE009AE5B9 /* iCarousel.h */,
+				801F34412264B5BE009AE5B9 /* iCarousel.m */,
+				801F342D2264B136009AE5B9 /* AppDelegate.swift */,
+				801F342F2264B136009AE5B9 /* ViewController.swift */,
+				801F34312264B136009AE5B9 /* Main.storyboard */,
+				801F34342264B137009AE5B9 /* Assets.xcassets */,
+				801F34362264B137009AE5B9 /* LaunchScreen.storyboard */,
+				801F34392264B137009AE5B9 /* Info.plist */,
+				801F343F2264B5BD009AE5B9 /* Rumo-Store-Bridging-Header.h */,
+				801F34472264D1A1009AE5B9 /* Vanguarda.swift */,
+				801F34492264D2A6009AE5B9 /* Rumo.swift */,
+			);
+			path = "Rumo-Store";
+			sourceTree = "<group>";
+		};
+		801F34452264D110009AE5B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		801F34462264D119009AE5B9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				801F34432264C5ED009AE5B9 /* imagens.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		801F34292264B136009AE5B9 /* Rumo-Store */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 801F343C2264B137009AE5B9 /* Build configuration list for PBXNativeTarget "Rumo-Store" */;
+			buildPhases = (
+				801F34262264B136009AE5B9 /* Sources */,
+				801F34272264B136009AE5B9 /* Frameworks */,
+				801F34282264B136009AE5B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rumo-Store";
+			productName = "Rumo-Store";
+			productReference = 801F342A2264B136009AE5B9 /* Rumo-Store.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		801F34222264B136009AE5B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = ProIT;
+				TargetAttributes = {
+					801F34292264B136009AE5B9 = {
+						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
+					};
+				};
+			};
+			buildConfigurationList = 801F34252264B136009AE5B9 /* Build configuration list for PBXProject "Rumo-Store" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 801F34212264B136009AE5B9;
+			productRefGroup = 801F342B2264B136009AE5B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				801F34292264B136009AE5B9 /* Rumo-Store */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		801F34282264B136009AE5B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				801F34382264B137009AE5B9 /* LaunchScreen.storyboard in Resources */,
+				801F34352264B137009AE5B9 /* Assets.xcassets in Resources */,
+				801F34332264B136009AE5B9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		801F34262264B136009AE5B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				801F344A2264D2A6009AE5B9 /* Rumo.swift in Sources */,
+				801F34442264C5ED009AE5B9 /* imagens.swift in Sources */,
+				801F34422264B5BE009AE5B9 /* iCarousel.m in Sources */,
+				801F34302264B136009AE5B9 /* ViewController.swift in Sources */,
+				801F342E2264B136009AE5B9 /* AppDelegate.swift in Sources */,
+				801F34482264D1A1009AE5B9 /* Vanguarda.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		801F34312264B136009AE5B9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				801F34322264B136009AE5B9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		801F34362264B137009AE5B9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				801F34372264B137009AE5B9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		801F343A2264B137009AE5B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		801F343B2264B137009AE5B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		801F343D2264B137009AE5B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BM87E2D97X;
+				INFOPLIST_FILE = "Rumo-Store/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.proit.Rumo-Store";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Rumo-Store/Rumo-Store-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		801F343E2264B137009AE5B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BM87E2D97X;
+				INFOPLIST_FILE = "Rumo-Store/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.proit.Rumo-Store";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Rumo-Store/Rumo-Store-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		801F34252264B136009AE5B9 /* Build configuration list for PBXProject "Rumo-Store" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				801F343A2264B137009AE5B9 /* Debug */,
+				801F343B2264B137009AE5B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		801F343C2264B137009AE5B9 /* Build configuration list for PBXNativeTarget "Rumo-Store" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				801F343D2264B137009AE5B9 /* Debug */,
+				801F343E2264B137009AE5B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 801F34222264B136009AE5B9 /* Project object */;
+}
