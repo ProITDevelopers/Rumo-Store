@@ -7,21 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45A19E8C801FCB2F12E0A018 /* Pods_Rumo_Store.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D13754A93EE762DD6A0E8FB /* Pods_Rumo_Store.framework */; };
 		801F342E2264B136009AE5B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801F342D2264B136009AE5B9 /* AppDelegate.swift */; };
-		801F34302264B136009AE5B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801F342F2264B136009AE5B9 /* ViewController.swift */; };
+		801F34302264B136009AE5B9 /* Mercado.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801F342F2264B136009AE5B9 /* Mercado.swift */; };
 		801F34332264B136009AE5B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 801F34312264B136009AE5B9 /* Main.storyboard */; };
 		801F34352264B137009AE5B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 801F34342264B137009AE5B9 /* Assets.xcassets */; };
 		801F34382264B137009AE5B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 801F34362264B137009AE5B9 /* LaunchScreen.storyboard */; };
 		801F34422264B5BE009AE5B9 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 801F34412264B5BE009AE5B9 /* iCarousel.m */; };
-		801F34442264C5ED009AE5B9 /* imagens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801F34432264C5ED009AE5B9 /* imagens.swift */; };
+		801F34442264C5ED009AE5B9 /* Carrinho.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801F34432264C5ED009AE5B9 /* Carrinho.swift */; };
 		801F34482264D1A1009AE5B9 /* Vanguarda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801F34472264D1A1009AE5B9 /* Vanguarda.swift */; };
 		801F344A2264D2A6009AE5B9 /* Rumo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801F34492264D2A6009AE5B9 /* Rumo.swift */; };
+		80970ED42265F49D007A2A86 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80970ED22265F49C007A2A86 /* SWRevealViewController.m */; };
+		80970ED82265F512007A2A86 /* Textfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80970ED72265F512007A2A86 /* Textfield.swift */; };
+		80970EDA2265F520007A2A86 /* Botao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80970ED92265F520007A2A86 /* Botao.swift */; };
+		80970EDC2265F538007A2A86 /* imagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80970EDB2265F538007A2A86 /* imagem.swift */; };
+		80970EDE2265F6D4007A2A86 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80970EDD2265F6D3007A2A86 /* WebKit.framework */; };
+		80FE31402265FB6B00C1B06C /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE313F2265FB6B00C1B06C /* Login.swift */; };
+		80FE31422266047900C1B06C /* Cadastro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE31412266047900C1B06C /* Cadastro.swift */; };
+		80FE314422660A4D00C1B06C /* PaginaInicial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE314322660A4D00C1B06C /* PaginaInicial.swift */; };
+		80FE314622660AFC00C1B06C /* XmlParserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE314522660AFC00C1B06C /* XmlParserManager.swift */; };
+		80FE314822660B5900C1B06C /* PaginaInicialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE314722660B5900C1B06C /* PaginaInicialCell.swift */; };
+		80FE314A22660BB900C1B06C /* FeedWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE314922660BB900C1B06C /* FeedWeb.swift */; };
+		80FE314D226610B900C1B06C /* MercadoWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE314C226610B900C1B06C /* MercadoWeb.swift */; };
+		80FE314F226610D100C1B06C /* VanguardaWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE314E226610D100C1B06C /* VanguardaWeb.swift */; };
+		80FE3151226610EF00C1B06C /* RumoWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE3150226610EF00C1B06C /* RumoWeb.swift */; };
+		80FE31532266137100C1B06C /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE31522266137100C1B06C /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D13754A93EE762DD6A0E8FB /* Pods_Rumo_Store.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rumo_Store.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		663BD2E49CBF19D880A2D9AB /* Pods-Rumo-Store.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rumo-Store.debug.xcconfig"; path = "Target Support Files/Pods-Rumo-Store/Pods-Rumo-Store.debug.xcconfig"; sourceTree = "<group>"; };
 		801F342A2264B136009AE5B9 /* Rumo-Store.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rumo-Store.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		801F342D2264B136009AE5B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		801F342F2264B136009AE5B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		801F342F2264B136009AE5B9 /* Mercado.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mercado.swift; sourceTree = "<group>"; };
 		801F34322264B136009AE5B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		801F34342264B137009AE5B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		801F34372264B137009AE5B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -29,9 +47,26 @@
 		801F343F2264B5BD009AE5B9 /* Rumo-Store-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Rumo-Store-Bridging-Header.h"; sourceTree = "<group>"; };
 		801F34402264B5BE009AE5B9 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iCarousel.h; path = "../../../Downloads/iCarousel-master/iCarousel/iCarousel.h"; sourceTree = "<group>"; };
 		801F34412264B5BE009AE5B9 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iCarousel.m; path = "../../../Downloads/iCarousel-master/iCarousel/iCarousel.m"; sourceTree = "<group>"; };
-		801F34432264C5ED009AE5B9 /* imagens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagens.swift; sourceTree = "<group>"; };
+		801F34432264C5ED009AE5B9 /* Carrinho.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carrinho.swift; sourceTree = "<group>"; };
 		801F34472264D1A1009AE5B9 /* Vanguarda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vanguarda.swift; sourceTree = "<group>"; };
 		801F34492264D2A6009AE5B9 /* Rumo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rumo.swift; sourceTree = "<group>"; };
+		80970ED22265F49C007A2A86 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../../Downloads/RumoStore-Brian-master/RumoStore/SWRevealViewController.m"; sourceTree = "<group>"; };
+		80970ED32265F49D007A2A86 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../../Downloads/RumoStore-Brian-master/RumoStore/SWRevealViewController.h"; sourceTree = "<group>"; };
+		80970ED72265F512007A2A86 /* Textfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Textfield.swift; sourceTree = "<group>"; };
+		80970ED92265F520007A2A86 /* Botao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Botao.swift; sourceTree = "<group>"; };
+		80970EDB2265F538007A2A86 /* imagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagem.swift; sourceTree = "<group>"; };
+		80970EDD2265F6D3007A2A86 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		80FE313F2265FB6B00C1B06C /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		80FE31412266047900C1B06C /* Cadastro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cadastro.swift; sourceTree = "<group>"; };
+		80FE314322660A4D00C1B06C /* PaginaInicial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginaInicial.swift; sourceTree = "<group>"; };
+		80FE314522660AFC00C1B06C /* XmlParserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlParserManager.swift; sourceTree = "<group>"; };
+		80FE314722660B5900C1B06C /* PaginaInicialCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginaInicialCell.swift; sourceTree = "<group>"; };
+		80FE314922660BB900C1B06C /* FeedWeb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedWeb.swift; sourceTree = "<group>"; };
+		80FE314C226610B900C1B06C /* MercadoWeb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MercadoWeb.swift; sourceTree = "<group>"; };
+		80FE314E226610D100C1B06C /* VanguardaWeb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VanguardaWeb.swift; sourceTree = "<group>"; };
+		80FE3150226610EF00C1B06C /* RumoWeb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RumoWeb.swift; sourceTree = "<group>"; };
+		80FE31522266137100C1B06C /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = "../../../../Downloads/Reachability.swift-master/Sources/Reachability.swift"; sourceTree = "<group>"; };
+		EEEC3AB7AC7342C9C41AB6C5 /* Pods-Rumo-Store.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rumo-Store.release.xcconfig"; path = "Target Support Files/Pods-Rumo-Store/Pods-Rumo-Store.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +74,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80970EDE2265F6D4007A2A86 /* WebKit.framework in Frameworks */,
+				45A19E8C801FCB2F12E0A018 /* Pods_Rumo_Store.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35095B53A9925710044CB319 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				663BD2E49CBF19D880A2D9AB /* Pods-Rumo-Store.debug.xcconfig */,
+				EEEC3AB7AC7342C9C41AB6C5 /* Pods-Rumo-Store.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4A62E789855E1395D06CEFF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80970EDD2265F6D3007A2A86 /* WebKit.framework */,
+				3D13754A93EE762DD6A0E8FB /* Pods_Rumo_Store.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		801F34212264B136009AE5B9 = {
 			isa = PBXGroup;
 			children = (
 				801F342C2264B136009AE5B9 /* Rumo-Store */,
 				801F342B2264B136009AE5B9 /* Products */,
+				35095B53A9925710044CB319 /* Pods */,
+				4A62E789855E1395D06CEFF2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,19 +121,16 @@
 		801F342C2264B136009AE5B9 /* Rumo-Store */ = {
 			isa = PBXGroup;
 			children = (
-				801F34462264D119009AE5B9 /* Controller */,
-				801F34452264D110009AE5B9 /* View */,
+				801F342D2264B136009AE5B9 /* AppDelegate.swift */,
+				801F34392264B137009AE5B9 /* Info.plist */,
+				80970ED32265F49D007A2A86 /* SWRevealViewController.h */,
+				80970ED22265F49C007A2A86 /* SWRevealViewController.m */,
 				801F34402264B5BE009AE5B9 /* iCarousel.h */,
 				801F34412264B5BE009AE5B9 /* iCarousel.m */,
-				801F342D2264B136009AE5B9 /* AppDelegate.swift */,
-				801F342F2264B136009AE5B9 /* ViewController.swift */,
-				801F34312264B136009AE5B9 /* Main.storyboard */,
-				801F34342264B137009AE5B9 /* Assets.xcassets */,
-				801F34362264B137009AE5B9 /* LaunchScreen.storyboard */,
-				801F34392264B137009AE5B9 /* Info.plist */,
 				801F343F2264B5BD009AE5B9 /* Rumo-Store-Bridging-Header.h */,
-				801F34472264D1A1009AE5B9 /* Vanguarda.swift */,
-				801F34492264D2A6009AE5B9 /* Rumo.swift */,
+				80970ED52265F4F4007A2A86 /* Model */,
+				801F34462264D119009AE5B9 /* Controller */,
+				801F34452264D110009AE5B9 /* View */,
 			);
 			path = "Rumo-Store";
 			sourceTree = "<group>";
@@ -84,6 +138,11 @@
 		801F34452264D110009AE5B9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				80970ED62265F4FA007A2A86 /* Design */,
+				801F34312264B136009AE5B9 /* Main.storyboard */,
+				801F34342264B137009AE5B9 /* Assets.xcassets */,
+				801F34362264B137009AE5B9 /* LaunchScreen.storyboard */,
+				80FE314722660B5900C1B06C /* PaginaInicialCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -91,9 +150,54 @@
 		801F34462264D119009AE5B9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				801F34432264C5ED009AE5B9 /* imagens.swift */,
+				80FE314B22660E8400C1B06C /* Web */,
+				80FE313E2265F8E000C1B06C /* Revistas */,
+				80FE313F2265FB6B00C1B06C /* Login.swift */,
+				80FE31412266047900C1B06C /* Cadastro.swift */,
+				80FE314322660A4D00C1B06C /* PaginaInicial.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		80970ED52265F4F4007A2A86 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				80FE314522660AFC00C1B06C /* XmlParserManager.swift */,
+				80FE31522266137100C1B06C /* Reachability.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		80970ED62265F4FA007A2A86 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				80970ED72265F512007A2A86 /* Textfield.swift */,
+				80970ED92265F520007A2A86 /* Botao.swift */,
+				80970EDB2265F538007A2A86 /* imagem.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		80FE313E2265F8E000C1B06C /* Revistas */ = {
+			isa = PBXGroup;
+			children = (
+				801F342F2264B136009AE5B9 /* Mercado.swift */,
+				801F34472264D1A1009AE5B9 /* Vanguarda.swift */,
+				801F34492264D2A6009AE5B9 /* Rumo.swift */,
+				801F34432264C5ED009AE5B9 /* Carrinho.swift */,
+			);
+			path = Revistas;
+			sourceTree = "<group>";
+		};
+		80FE314B22660E8400C1B06C /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				80FE314922660BB900C1B06C /* FeedWeb.swift */,
+				80FE314C226610B900C1B06C /* MercadoWeb.swift */,
+				80FE314E226610D100C1B06C /* VanguardaWeb.swift */,
+				80FE3150226610EF00C1B06C /* RumoWeb.swift */,
+			);
+			path = Web;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,9 +207,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 801F343C2264B137009AE5B9 /* Build configuration list for PBXNativeTarget "Rumo-Store" */;
 			buildPhases = (
+				4BD8867ACF1FE3BD55B24E3A /* [CP] Check Pods Manifest.lock */,
 				801F34262264B136009AE5B9 /* Sources */,
 				801F34272264B136009AE5B9 /* Frameworks */,
 				801F34282264B136009AE5B9 /* Resources */,
+				3EF65D63CA3B2384D772C428 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,16 +269,81 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3EF65D63CA3B2384D772C428 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rumo-Store/Pods-Rumo-Store-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Rumo-Store/Pods-Rumo-Store-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BD8867ACF1FE3BD55B24E3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rumo-Store-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		801F34262264B136009AE5B9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80970EDA2265F520007A2A86 /* Botao.swift in Sources */,
+				80970ED42265F49D007A2A86 /* SWRevealViewController.m in Sources */,
+				80FE3151226610EF00C1B06C /* RumoWeb.swift in Sources */,
+				80FE314F226610D100C1B06C /* VanguardaWeb.swift in Sources */,
 				801F344A2264D2A6009AE5B9 /* Rumo.swift in Sources */,
-				801F34442264C5ED009AE5B9 /* imagens.swift in Sources */,
+				801F34442264C5ED009AE5B9 /* Carrinho.swift in Sources */,
+				80970ED82265F512007A2A86 /* Textfield.swift in Sources */,
 				801F34422264B5BE009AE5B9 /* iCarousel.m in Sources */,
-				801F34302264B136009AE5B9 /* ViewController.swift in Sources */,
+				80FE314622660AFC00C1B06C /* XmlParserManager.swift in Sources */,
+				80FE314422660A4D00C1B06C /* PaginaInicial.swift in Sources */,
+				80FE31422266047900C1B06C /* Cadastro.swift in Sources */,
+				80970EDC2265F538007A2A86 /* imagem.swift in Sources */,
+				80FE314A22660BB900C1B06C /* FeedWeb.swift in Sources */,
+				801F34302264B136009AE5B9 /* Mercado.swift in Sources */,
+				80FE314822660B5900C1B06C /* PaginaInicialCell.swift in Sources */,
 				801F342E2264B136009AE5B9 /* AppDelegate.swift in Sources */,
+				80FE31402265FB6B00C1B06C /* Login.swift in Sources */,
+				80FE314D226610B900C1B06C /* MercadoWeb.swift in Sources */,
+				80FE31532266137100C1B06C /* Reachability.swift in Sources */,
 				801F34482264D1A1009AE5B9 /* Vanguarda.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,17 +488,19 @@
 		};
 		801F343D2264B137009AE5B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 663BD2E49CBF19D880A2D9AB /* Pods-Rumo-Store.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BM87E2D97X;
 				INFOPLIST_FILE = "Rumo-Store/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.proit.Rumo-Store";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RumoStore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Rumo-Store/Rumo-Store-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -338,17 +511,19 @@
 		};
 		801F343E2264B137009AE5B9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEEC3AB7AC7342C9C41AB6C5 /* Pods-Rumo-Store.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BM87E2D97X;
 				INFOPLIST_FILE = "Rumo-Store/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.proit.Rumo-Store";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RumoStore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Rumo-Store/Rumo-Store-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
