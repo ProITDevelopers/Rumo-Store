@@ -15,7 +15,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let email: String? = UserDefaults.standard.string(forKey: "email")
+        
+        if email != nil {
+            let mainStoryBoard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let inicio = mainStoryBoard.instantiateViewController(withIdentifier: "paginainicial") as! SWRevealViewController
+            self.window?.rootViewController = inicio
+            
+        }
+      
+        
         return true
     }
 

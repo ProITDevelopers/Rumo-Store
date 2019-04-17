@@ -1,44 +1,40 @@
 //
-//  RumoWeb.swift
+//  ConcursoWeb.swift
 //  Rumo-Store
 //
-//  Created by  Snow on 16/04/2019.
+//  Created by  Snow on 17/04/2019.
 //  Copyright © 2019 ProIT. All rights reserved.
 //
 
 import UIKit
 import WebKit
 
-class RumoWeb: UIViewController {
-
+class ConcursoWeb: UIViewController {
+    
     @IBOutlet weak var webview: WKWebView!
     @IBOutlet weak var carregar: UIActivityIndicatorView!
     @IBOutlet weak var menuBotao: UIBarButtonItem!
     
     
-      var alcance : Reachability?
-    
-    
-    
+    var alcance : Reachability?
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         menuBotao.target = self.revealViewController()
         menuBotao.action = #selector(SWRevealViewController.revealToggle(_:))
         self.view.addGestureRecognizer((self.revealViewController()?.panGestureRecognizer())!)
         self.view.addGestureRecognizer((self.revealViewController()?.tapGestureRecognizer())!)
         self.revealViewController()?.rearViewRevealWidth = 305
         
-        
         //verifica conexao
         self.alcance = Reachability.init()
         if ((self.alcance!.connection) != .none) {
             
             //fazer o pedido da url
-            let url = URL(string: "https://www.mediarumo.com/")
-            let request = URLRequest(url: url!)
-            webview.load(request)
-            webview.addObserver(self, forKeyPath: #keyPath(WKWebView.isLoading), options: .new, context: nil)
+            let request = URLRequest(url: URL(string: "https://concursomediarumo.herokuapp.com")!)
+            self.webview.load(request)
+            self.webview.addObserver(self, forKeyPath: #keyPath(WKWebView.isLoading), options: .new, context: nil)
             
             
         }else {
@@ -49,8 +45,12 @@ class RumoWeb: UIViewController {
         
         
         
-     
     }
+    
+
+    
+    
+    
     
     
     
@@ -63,6 +63,7 @@ class RumoWeb: UIViewController {
         appDelegate?.window??.rootViewController = loginPage
         
     }
+    
     
     
     
@@ -82,18 +83,23 @@ class RumoWeb: UIViewController {
     
     
     
-    
-    
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        
         if keyPath == "loading" {
+            
             if webview.isLoading {
                 carregar.startAnimating()
                 carregar.isHidden = false
                 
             }else {
                 carregar.stopAnimating()
+                
             }
         }
     }
     
+    
+  
+
+
 }

@@ -80,6 +80,8 @@ class PaginaInicial: UIViewController {
     
     
     @IBAction func sairButton(_ sender: Any) {
+        UserDefaults.standard.removeObject(forKey: "email")
+        UserDefaults.standard.removeObject(forKey: "nome")
         let loginPage =  self.storyboard?.instantiateViewController(withIdentifier: "login") as! Login
         let appDelegate = UIApplication.shared.delegate
         appDelegate?.window??.rootViewController = loginPage

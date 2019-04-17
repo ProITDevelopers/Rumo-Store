@@ -15,7 +15,10 @@ class VanguardaWeb: UIViewController {
     @IBOutlet weak var webview: WKWebView!
     @IBOutlet weak var carregar: UIActivityIndicatorView!
     @IBOutlet weak var menuBotao: UIBarButtonItem!
+
     
+    var alcance : Reachability?
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,19 +30,49 @@ class VanguardaWeb: UIViewController {
         self.revealViewController()?.rearViewRevealWidth = 305
         
         
-        let url = URL(string: "https://www.vanguarda.co.ao/")
-        let request = URLRequest(url: url!)
-        webview.load(request)
-        webview.addObserver(self, forKeyPath: #keyPath(WKWebView.isLoading), options: .new, context: nil)
+        //verifica conexao
+        self.alcance = Reachability.init()
+        if ((self.alcance!.connection) != .none) {
+            
+            //fazer o pedido da url
+            let url = URL(string: "https://www.vanguarda.co.ao/")
+            let request = URLRequest(url: url!)
+            webview.load(request)
+            webview.addObserver(self, forKeyPath: #keyPath(WKWebView.isLoading), options: .new, context: nil)
+            
+            
+        }else {
+            print("Internet Not Avaible")
+            mostrarMensagem(mensagem: "Sem Conexão a Internet!")
+        }
+        
+        
+
     }
     
     
     
     
     @IBAction func sairButton(_ sender: Any) {
+        UserDefaults.standard.removeObject(forKey: "email")
+        UserDefaults.standard.removeObject(forKey: "nome")
         let loginPage =  self.storyboard?.instantiateViewController(withIdentifier: "login") as! Login
         let appDelegate = UIApplication.shared.delegate
         appDelegate?.window??.rootViewController = loginPage
+        
+    }
+    
+    
+    
+    
+    func mostrarMensagem(mensagem: String) {
+        let mensagem  = UIAlertController(title: "AVISO", message: mensagem, preferredStyle: UIAlertController.Style.alert)
+        
+        let action = UIAlertAction(title: "OK", style: UIAlertAction.Style.default) { (actions) in
+            mensagem.dismiss(animated: true, completion: nil)
+        }
+        mensagem.addAction(action)
+        self.present(mensagem,animated: true, completion: nil)
         
     }
     

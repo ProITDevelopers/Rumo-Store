@@ -32,7 +32,7 @@ class Login: UIViewController {
             mostrarMensagem(mensagem: "Preencha os Campos!")
             
         }else {
-            
+            //verifica conexao
             self.alcance = Reachability.init()
             if ((self.alcance!.connection) != .none) {
                  login()
@@ -54,12 +54,24 @@ class Login: UIViewController {
         self.carregar.isHidden = false
         let param = ["email" : email.text!, "password" : senha.text!] as [String : String]
         
-        Alamofire.request(url, method: .post, parameters: param).responseString {
+        Alamofire.request(url, method: .post, parameters: param).responseJSON {
             response in
             
             if response.result.isSuccess {
                 if response.response?.statusCode != 400 {
                     print("OK")
+                    
+                    let json: JSON = JSON(response.result.value!)
+                    print(json)
+                    
+                    
+                    let nome = json["data"]["nomeCliente"].string
+                    let email = json["data"]["email"].string
+                 
+                    UserDefaults.standard.set(nome, forKey: "nome")
+                    UserDefaults.standard.set(email, forKey: "email")
+                    
+                    
                     self.carregar.stopAnimating()
                     let paginaInicial =  self.storyboard?.instantiateViewController(withIdentifier: "paginainicial") as! SWRevealViewController
                     let appDelegate = UIApplication.shared.delegate

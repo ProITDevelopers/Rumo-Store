@@ -22,6 +22,7 @@
 		80970EDA2265F520007A2A86 /* Botao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80970ED92265F520007A2A86 /* Botao.swift */; };
 		80970EDC2265F538007A2A86 /* imagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80970EDB2265F538007A2A86 /* imagem.swift */; };
 		80970EDE2265F6D4007A2A86 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80970EDD2265F6D3007A2A86 /* WebKit.framework */; };
+		8098361B22670B9D0082115A /* ConcursoWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8098361A22670B9D0082115A /* ConcursoWeb.swift */; };
 		80FE31402265FB6B00C1B06C /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE313F2265FB6B00C1B06C /* Login.swift */; };
 		80FE31422266047900C1B06C /* Cadastro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE31412266047900C1B06C /* Cadastro.swift */; };
 		80FE314422660A4D00C1B06C /* PaginaInicial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE314322660A4D00C1B06C /* PaginaInicial.swift */; };
@@ -32,6 +33,7 @@
 		80FE314F226610D100C1B06C /* VanguardaWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE314E226610D100C1B06C /* VanguardaWeb.swift */; };
 		80FE3151226610EF00C1B06C /* RumoWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE3150226610EF00C1B06C /* RumoWeb.swift */; };
 		80FE31532266137100C1B06C /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE31522266137100C1B06C /* Reachability.swift */; };
+		80FE315522661DFE00C1B06C /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE315422661DFE00C1B06C /* SideMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,7 @@
 		80970ED92265F520007A2A86 /* Botao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Botao.swift; sourceTree = "<group>"; };
 		80970EDB2265F538007A2A86 /* imagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagem.swift; sourceTree = "<group>"; };
 		80970EDD2265F6D3007A2A86 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		8098361A22670B9D0082115A /* ConcursoWeb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcursoWeb.swift; sourceTree = "<group>"; };
 		80FE313F2265FB6B00C1B06C /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		80FE31412266047900C1B06C /* Cadastro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cadastro.swift; sourceTree = "<group>"; };
 		80FE314322660A4D00C1B06C /* PaginaInicial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginaInicial.swift; sourceTree = "<group>"; };
@@ -66,6 +69,7 @@
 		80FE314E226610D100C1B06C /* VanguardaWeb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VanguardaWeb.swift; sourceTree = "<group>"; };
 		80FE3150226610EF00C1B06C /* RumoWeb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RumoWeb.swift; sourceTree = "<group>"; };
 		80FE31522266137100C1B06C /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = "../../../../Downloads/Reachability.swift-master/Sources/Reachability.swift"; sourceTree = "<group>"; };
+		80FE315422661DFE00C1B06C /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 		EEEC3AB7AC7342C9C41AB6C5 /* Pods-Rumo-Store.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rumo-Store.release.xcconfig"; path = "Target Support Files/Pods-Rumo-Store/Pods-Rumo-Store.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +159,7 @@
 				80FE313F2265FB6B00C1B06C /* Login.swift */,
 				80FE31412266047900C1B06C /* Cadastro.swift */,
 				80FE314322660A4D00C1B06C /* PaginaInicial.swift */,
+				80FE315422661DFE00C1B06C /* SideMenu.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -196,6 +201,7 @@
 				80FE314C226610B900C1B06C /* MercadoWeb.swift */,
 				80FE314E226610D100C1B06C /* VanguardaWeb.swift */,
 				80FE3150226610EF00C1B06C /* RumoWeb.swift */,
+				8098361A22670B9D0082115A /* ConcursoWeb.swift */,
 			);
 			path = Web;
 			sourceTree = "<group>";
@@ -328,12 +334,14 @@
 				80970EDA2265F520007A2A86 /* Botao.swift in Sources */,
 				80970ED42265F49D007A2A86 /* SWRevealViewController.m in Sources */,
 				80FE3151226610EF00C1B06C /* RumoWeb.swift in Sources */,
+				80FE315522661DFE00C1B06C /* SideMenu.swift in Sources */,
 				80FE314F226610D100C1B06C /* VanguardaWeb.swift in Sources */,
 				801F344A2264D2A6009AE5B9 /* Rumo.swift in Sources */,
 				801F34442264C5ED009AE5B9 /* Carrinho.swift in Sources */,
 				80970ED82265F512007A2A86 /* Textfield.swift in Sources */,
 				801F34422264B5BE009AE5B9 /* iCarousel.m in Sources */,
 				80FE314622660AFC00C1B06C /* XmlParserManager.swift in Sources */,
+				8098361B22670B9D0082115A /* ConcursoWeb.swift in Sources */,
 				80FE314422660A4D00C1B06C /* PaginaInicial.swift in Sources */,
 				80FE31422266047900C1B06C /* Cadastro.swift in Sources */,
 				80970EDC2265F538007A2A86 /* imagem.swift in Sources */,

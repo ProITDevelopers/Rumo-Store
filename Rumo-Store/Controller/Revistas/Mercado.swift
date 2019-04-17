@@ -17,7 +17,7 @@ class Mercado: UIViewController {
     @IBOutlet weak var menuBotao: UIBarButtonItem!
     
     
-    let array = [UIImage(named: "1"),UIImage(named: "2.1"),UIImage(named: "3"),UIImage(named: "1"),UIImage(named: "2.1"),UIImage(named: "3"),UIImage(named: "2.1"),UIImage(named: "3"),UIImage(named: "2.1"),UIImage(named: "3")]
+    let array = [UIImage(named: "1"),UIImage(named: "0"),UIImage(named: "3"),UIImage(named: "1"),UIImage(named: "0"),UIImage(named: "3"),UIImage(named: "0"),UIImage(named: "3"),UIImage(named: "0"),UIImage(named: "3")]
     
     
     
@@ -39,6 +39,8 @@ class Mercado: UIViewController {
     
     
     @IBAction func sairButton(_ sender: Any) {
+        UserDefaults.standard.removeObject(forKey: "email")
+        UserDefaults.standard.removeObject(forKey: "nome")
         let loginPage =  self.storyboard?.instantiateViewController(withIdentifier: "login") as! Login
         let appDelegate = UIApplication.shared.delegate
         appDelegate?.window??.rootViewController = loginPage

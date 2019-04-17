@@ -12,7 +12,9 @@ class Vanguarda: UIViewController {
 
     
     @IBOutlet weak var icarousel: iCarousel!
-        let array = [UIImage(named: "4"),UIImage(named: "5"),UIImage(named: "6"),UIImage(named: "4"),UIImage(named: "5"),UIImage(named: "6"),UIImage(named: "4"),UIImage(named: "5"),UIImage(named: "6"),UIImage(named: "4"),UIImage(named: "5"),UIImage(named: "6")]
+     
+    
+     let array = [UIImage(named: "7"),UIImage(named: "8"),UIImage(named: "9"),UIImage(named: "7"),UIImage(named: "8"),UIImage(named: "9"),UIImage(named: "7"),UIImage(named: "8"),UIImage(named: "9"),UIImage(named: "7"),UIImage(named: "8"),UIImage(named: "9")]
     
     
     
@@ -61,6 +63,8 @@ extension Vanguarda: iCarouselDelegate, iCarouselDataSource {
     
     
     func carousel(_ carousel: iCarousel, didSelectItemAt index: Int) {
+        UserDefaults.standard.removeObject(forKey: "email")
+        UserDefaults.standard.removeObject(forKey: "nome")
         let vc = storyboard?.instantiateViewController(withIdentifier: "imagens") as! Carrinho
         vc.name = array[index]
         self.navigationController?.pushViewController(vc, animated: true)

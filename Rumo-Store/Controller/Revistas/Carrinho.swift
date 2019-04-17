@@ -10,6 +10,7 @@ import UIKit
 
 class Carrinho: UIViewController {
 
+    
     @IBOutlet weak var imagns: UIImageView!
     
     var name: UIImage?

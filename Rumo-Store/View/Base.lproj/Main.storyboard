@@ -411,10 +411,10 @@
             </objects>
             <point key="canvasLocation" x="2378" y="-1812"/>
         </scene>
-        <!--View Controller-->
+        <!--Side Menu-->
         <scene sceneID="YD0-I2-e5v">
             <objects>
-                <viewController id="zmM-SQ-It9" sceneMemberID="viewController">
+                <viewController id="zmM-SQ-It9" customClass="SideMenu" customModule="Rumo_Store" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FnS-fx-r4q">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -581,9 +581,6 @@
                                                 <state key="normal" title="Instagram">
                                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
-                                                <connections>
-                                                    <segue destination="EJ5-Yu-c8G" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="eIg-jv-SCF"/>
-                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O31-rn-8nZ">
                                                 <rect key="frame" x="0.0" y="530" width="320" height="35"/>
@@ -595,9 +592,6 @@
                                                 <state key="normal" title="Facebook">
                                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
-                                                <connections>
-                                                    <segue destination="gc7-ui-9HV" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="arh-tQ-sbC"/>
-                                                </connections>
                                             </button>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon (1)" translatesAutoresizingMaskIntoConstraints="NO" id="hmL-gG-qM5">
                                                 <rect key="frame" x="8" y="171" width="32" height="28"/>
@@ -733,6 +727,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8qD-aP-Hxf"/>
                     </view>
+                    <connections>
+                        <outlet property="email" destination="jIY-di-PFX" id="e2F-Up-QAX"/>
+                        <outlet property="nome" destination="5qX-A3-cNZ" id="vte-y3-HGz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HXK-ew-ZuT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -883,7 +881,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logotipo_mediarumo-1" translatesAutoresizingMaskIntoConstraints="NO" id="LGX-Sm-lvI">
-                                                <rect key="frame" x="85" y="90" width="150" height="55"/>
+                                                <rect key="frame" x="85" y="90" width="150" height="16"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pnf-v9-Mp7">
                                                 <rect key="frame" x="8" y="28" width="48" height="48"/>
@@ -894,7 +892,7 @@
                                                 </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Nome" textAlignment="natural" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Rc4-sR-T0C" customClass="Textfield" customModule="Rumo_Store" customModuleProvider="target">
-                                                <rect key="frame" x="25" y="190" width="270" height="44"/>
+                                                <rect key="frame" x="25" y="151" width="270" height="44"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="7QB-yK-OOF"/>
                                                 </constraints>
@@ -933,7 +931,7 @@
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Email" textAlignment="natural" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Xb6-aX-3A4" customClass="Textfield" customModule="Rumo_Store" customModuleProvider="target">
-                                                <rect key="frame" x="25" y="249" width="270" height="44"/>
+                                                <rect key="frame" x="25" y="210" width="270" height="44"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="wJV-jt-6fg"/>
                                                 </constraints>
@@ -972,7 +970,7 @@
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Senha" textAlignment="natural" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Vei-A5-lt7" customClass="Textfield" customModule="Rumo_Store" customModuleProvider="target">
-                                                <rect key="frame" x="25" y="308" width="270" height="44"/>
+                                                <rect key="frame" x="25" y="269" width="270" height="44"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="teM-Tq-JHV"/>
                                                 </constraints>
@@ -1011,7 +1009,7 @@
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Repetir Senha" textAlignment="natural" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="3bz-lz-jmv" customClass="Textfield" customModule="Rumo_Store" customModuleProvider="target">
-                                                <rect key="frame" x="25" y="367" width="270" height="44"/>
+                                                <rect key="frame" x="25" y="328" width="270" height="44"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="G0Q-nD-3vo"/>
                                                 </constraints>
@@ -1050,7 +1048,7 @@
                                                 </connections>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dks-zN-nIM" customClass="Botao" customModule="Rumo_Store" customModuleProvider="target">
-                                                <rect key="frame" x="25" y="471" width="270" height="40"/>
+                                                <rect key="frame" x="25" y="432" width="270" height="40"/>
                                                 <color key="backgroundColor" red="0.88235294119999996" green="0.77647058820000003" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="8IS-PS-hRM"/>
@@ -1324,10 +1322,10 @@
             </objects>
             <point key="canvasLocation" x="7684" y="-1014"/>
         </scene>
-        <!--View Controller-->
+        <!--Concurso Web-->
         <scene sceneID="90P-uK-xo8">
             <objects>
-                <viewController id="RCJ-QY-46h" sceneMemberID="viewController">
+                <viewController id="RCJ-QY-46h" customClass="ConcursoWeb" customModule="Rumo_Store" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x2W-CM-6Uj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1337,7 +1335,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
-                                    <navigationItem title="Concurso" id="NGG-Cs-OKu">
+                                    <navigationItem title="Sorteio" id="NGG-Cs-OKu">
                                         <barButtonItem key="leftBarButtonItem" image="icons8-menu-filled-90" id="lO4-yl-mwf">
                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </barButtonItem>
